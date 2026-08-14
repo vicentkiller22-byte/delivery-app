@@ -56,7 +56,7 @@ const LOCALES = [
     nombre: "El mejor Bolón D'Carol",
     categoria: "Desayunos",
     emoji: "🥟",
-    imagen: "logos/bolon-dcarol.png",
+    imagen: "bolon-dcarol.png",
     ubicacion: { lat: -2.228962, lng: -80.90887 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -90,7 +90,7 @@ const LOCALES = [
     nombre: "El mejor bolón de la Sra. Mero",
     categoria: "Desayunos",
     emoji: "🍳",
-    imagen: "logos/bolon-sra-mero.png",
+    imagen: "bolon-sra-mero.png",
     ubicacion: { lat: -2.2419375, lng: -80.9168281 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -146,7 +146,7 @@ const LOCALES = [
     nombre: "Verdemania",
     categoria: "Desayunos",
     emoji: "🦐",
-    imagen: "logos/verdemania.png",
+    imagen: "verdemania.png",
     ubicacion: { lat: -2.2253938, lng: -80.9113086 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -212,7 +212,7 @@ const LOCALES = [
     nombre: "Chicho Cafetería",
     categoria: "Desayunos",
     emoji: "☕",
-    imagen: "logos/chicho-cafeteria.png",
+    imagen: "chicho-cafeteria.png",
     ubicacion: { lat: -2.220211, lng: -80.945432 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -306,7 +306,7 @@ const LOCALES = [
     nombre: "Chuchurranga",
     categoria: "Desayunos",
     emoji: "🥥",
-    imagen: "logos/chuchurranga.png",
+    imagen: "chuchurranga.png",
     ubicacion: { lat: -2.2323875, lng: -80.9059531 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -359,7 +359,7 @@ const LOCALES = [
     nombre: "La Cabaña del Bolón",
     categoria: "Desayunos",
     emoji: "🏕️",
-    imagen: "logos/cabana-del-bolon.png",
+    imagen: "cabana-del-bolon.png",
     ubicacion: { lat: -2.2379309, lng: -80.9074283 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -438,7 +438,7 @@ const LOCALES = [
     nombre: "La Esquina de Alex",
     categoria: "Asaderos",
     emoji: "🍗",
-    imagen: "logos/esquina-de-alex.png",
+    imagen: "esquina-de-alex.png",
     ubicacion: { lat: -2.2215125, lng: -80.9122656 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -463,7 +463,7 @@ const LOCALES = [
     nombre: "Asadero Manabá",
     categoria: "Asaderos",
     emoji: "🍗",
-    imagen: "logos/asadero-manaba.png",
+    imagen: "asadero-manaba.png",
     ubicacion: { lat: -2.221302, lng: -80.911405 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -489,7 +489,7 @@ const LOCALES = [
     nombre: "Chifa Jia Lee",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-jia-lee.png",
+    imagen: "chifa-jia-lee.png",
     ubicacion: { lat: -2.235909, lng: -80.900996 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -573,7 +573,7 @@ const LOCALES = [
     nombre: "Chifa China",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-china.png",
+    imagen: "chifa-china.png",
     ubicacion: { lat: -2.2273375, lng: -80.8991406 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -664,7 +664,7 @@ const LOCALES = [
     nombre: "Chifa Shang Hai",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-shang-hai.png",
+    imagen: "chifa-shang-hai.png",
     ubicacion: { lat: -2.2284875, lng: -80.9065781 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -760,7 +760,7 @@ const LOCALES = [
     nombre: "Chifa Jinxiu",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-jinxiu.png",
+    imagen: "chifa-jinxiu.png",
     ubicacion: { lat: -2.2304482, lng: -80.899128 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -822,7 +822,7 @@ const LOCALES = [
     nombre: "Chifa Guan Cai",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-guan-cai.png",
+    imagen: "chifa-guan-cai.png",
     ubicacion: { lat: -2.2285604, lng: -80.9072038 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -920,7 +920,7 @@ const LOCALES = [
     nombre: "Chifa Don Víctor",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-don-victor.png",
+    imagen: "chifa-don-victor.png",
     ubicacion: { lat: -2.2247375, lng: -80.9198281 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -978,7 +978,7 @@ const LOCALES = [
     nombre: "Chifa Asia",
     categoria: "Chifas",
     emoji: "🥡",
-    imagen: "logos/chifa-asia.png",
+    imagen: "chifa-asia.png",
     ubicacion: { lat: -2.2277625, lng: -80.9211719 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1062,7 +1062,7 @@ const LOCALES = [
     nombre: "Parrillada de Darío",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/parrillada-de-dario.png",
+    imagen: "parrillada-de-dario.png",
     ubicacion: { lat: -2.2218875, lng: -80.9093281 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1110,7 +1110,7 @@ const LOCALES = [
     nombre: "Helilupa",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/helilupa.png",
+    imagen: "helilupa.png",
     ubicacion: { lat: -2.234884, lng: -80.89157 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1188,7 +1188,7 @@ const LOCALES = [
     nombre: "Sabor y Caña Parrillada",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/sabor-y-cana.png",
+    imagen: "sabor-y-cana.png",
     ubicacion: { lat: -2.231598, lng: -80.894046 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1251,7 +1251,7 @@ const LOCALES = [
     nombre: "Kiosko Rojo",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/kiosko-rojo.png",
+    imagen: "kiosko-rojo.png",
     ubicacion: { lat: -2.235523, lng: -80.898109 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1298,7 +1298,7 @@ const LOCALES = [
     nombre: "Cerdomanía Grill",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/cerdomania-grill.png",
+    imagen: "cerdomania-grill.png",
     ubicacion: { lat: -2.233845, lng: -80.917739 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1372,7 +1372,7 @@ const LOCALES = [
     nombre: "RodriGrill",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/rodrigrill.png",
+    imagen: "rodrigrill.png",
     ubicacion: { lat: -2.224374, lng: -80.903234 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1444,7 +1444,7 @@ const LOCALES = [
     nombre: "La Tacada",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/la-tacada.png",
+    imagen: "la-tacada.png",
     ubicacion: { lat: -2.227637, lng: -80.908591 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1573,7 +1573,7 @@ const LOCALES = [
     nombre: "Rodriasaditos",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/rodriasaditos.png",
+    imagen: "rodriasaditos.png",
     ubicacion: { lat: -2.2057875, lng: -80.9635781 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -1604,7 +1604,7 @@ const LOCALES = [
     nombre: "Parrilla del Uruguayo",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/parrilla-del-uruguayo.png",
+    imagen: "parrilla-del-uruguayo.png",
     ubicacion: { lat: -2.2065375, lng: -80.9690781 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -1717,7 +1717,7 @@ const LOCALES = [
     nombre: "Rockaparrilla",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/rockaparrilla.png",
+    imagen: "rockaparrilla.png",
     ubicacion: { lat: -2.205682, lng: -80.973411 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -1790,7 +1790,7 @@ const LOCALES = [
     nombre: "Parrillada Don Ciro",
     categoria: "Parrilladas",
     emoji: "🔥",
-    imagen: "logos/parrillada-don-ciro.png",
+    imagen: "parrillada-don-ciro.png",
     ubicacion: { lat: -2.2063875, lng: -80.9719219 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -1904,7 +1904,7 @@ const LOCALES = [
     nombre: "Maxipizza",
     categoria: "Pizzerías",
     emoji: "🍕",
-    imagen: "logos/maxipizza.png",
+    imagen: "maxipizza.png",
     ubicacion: { lat: -2.220864, lng: -80.912096 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1932,7 +1932,7 @@ const LOCALES = [
     nombre: "Plops Pizza",
     categoria: "Pizzerías",
     emoji: "🍕",
-    imagen: "logos/plops-pizza.png",
+    imagen: "plops-pizza.png",
     ubicacion: { lat: -2.220921, lng: -80.910973 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -1970,7 +1970,7 @@ const LOCALES = [
     nombre: "Leños Pizza",
     categoria: "Pizzerías",
     emoji: "🍕",
-    imagen: "logos/lenos-pizza.png",
+    imagen: "lenos-pizza.png",
     ubicacion: { lat: -2.2052875, lng: -80.9581094 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2039,7 +2039,7 @@ const LOCALES = [
     nombre: "El Hornero",
     categoria: "Pizzerías",
     emoji: "🍕",
-    imagen: "logos/el-hornero.png",
+    imagen: "el-hornero.png",
     ubicacion: { lat: -2.205787, lng: -80.973279 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2104,7 +2104,7 @@ const LOCALES = [
     nombre: "Mario's Pizza",
     categoria: "Pizzerías",
     emoji: "🍕",
-    imagen: "logos/marios-pizza.png",
+    imagen: "marios-pizza.png",
     ubicacion: { lat: -2.204523, lng: -80.959132 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2190,7 +2190,7 @@ const LOCALES = [
     nombre: "Surf and Turf",
     categoria: "Hamburguesas y Tacos",
     emoji: "🍔",
-    imagen: "logos/surf-and-turf.png",
+    imagen: "surf-and-turf.png",
     ubicacion: { lat: -2.224777, lng: -80.939646 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2275,7 +2275,7 @@ const LOCALES = [
     nombre: "El Churry",
     categoria: "Hamburguesas y Tacos",
     emoji: "🍔",
-    imagen: "logos/el-churry.png",
+    imagen: "el-churry.png",
     ubicacion: { lat: -2.228345, lng: -80.92167 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2319,7 +2319,7 @@ const LOCALES = [
     nombre: "Burguer Zone",
     categoria: "Hamburguesas y Tacos",
     emoji: "🍔",
-    imagen: "logos/burguer-zone.png",
+    imagen: "burguer-zone.png",
     ubicacion: { lat: -2.2205785, lng: -80.9094606 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2369,7 +2369,7 @@ const LOCALES = [
     nombre: "Smoked House",
     categoria: "Hamburguesas y Tacos",
     emoji: "🍔",
-    imagen: "logos/smoked-house.png",
+    imagen: "smoked-house.png",
     ubicacion: { lat: -2.2247063, lng: -80.9199383 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2408,7 +2408,7 @@ const LOCALES = [
     nombre: "El Patroncito",
     categoria: "Hamburguesas y Tacos",
     emoji: "🍔",
-    imagen: "logos/el-patroncito.png",
+    imagen: "el-patroncito.png",
     ubicacion: { lat: -2.2281644, lng: -80.9216696 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2445,7 +2445,7 @@ const LOCALES = [
     nombre: "Perrada de Raúl",
     categoria: "Hamburguesas y Tacos",
     emoji: "🌭",
-    imagen: "logos/perrada-de-raul.png",
+    imagen: "perrada-de-raul.png",
     ubicacion: { lat: -2.204669, lng: -80.958798 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2500,7 +2500,7 @@ const LOCALES = [
     nombre: "Tacos y Piqueos",
     categoria: "Hamburguesas y Tacos",
     emoji: "🌮",
-    imagen: "logos/tacos-y-piqueos.png",
+    imagen: "tacos-y-piqueos.png",
     ubicacion: { lat: -2.2251348, lng: -80.916273 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2556,7 +2556,7 @@ const LOCALES = [
     nombre: "Tacos de Bigote",
     categoria: "Hamburguesas y Tacos",
     emoji: "🌮",
-    imagen: "logos/tacos-de-bigote.png",
+    imagen: "tacos-de-bigote.png",
     ubicacion: { lat: -2.206423, lng: -80.971467 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2613,7 +2613,7 @@ const LOCALES = [
     nombre: "Sunday Burguer",
     categoria: "Alitas y Papas",
     emoji: "🍔",
-    imagen: "logos/sunday-burguer.png",
+    imagen: "sunday-burguer.png",
     ubicacion: { lat: -2.220307, lng: -80.908319 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2651,7 +2651,7 @@ const LOCALES = [
     nombre: "Chola Papa",
     categoria: "Alitas y Papas",
     emoji: "🍟",
-    imagen: "logos/chola-papa.png",
+    imagen: "chola-papa.png",
     ubicacion: { lat: -2.220937, lng: -80.9109257 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
@@ -2698,7 +2698,7 @@ const LOCALES = [
     nombre: "Papicadas",
     categoria: "Alitas y Papas",
     emoji: "🍽️",
-    imagen: "logos/papicadas.png",
+    imagen: "papicadas.png",
     ubicacion: { lat: -2.232023, lng: -80.928001 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2726,7 +2726,7 @@ const LOCALES = [
     nombre: "Red Wings - Food & Drink",
     categoria: "Alitas y Papas",
     emoji: "🍗",
-    imagen: "logos/red-wings.png",
+    imagen: "red-wings.png",
     ubicacion: { lat: -2.213853, lng: -80.867286 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2803,7 +2803,7 @@ const LOCALES = [
     nombre: "Alitas To Go",
     categoria: "Alitas y Papas",
     emoji: "🔥",
-    imagen: "logos/alitas-to-go.png",
+    imagen: "alitas-to-go.png",
     ubicacion: { lat: -2.215905, lng: -80.948006 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2857,7 +2857,7 @@ const LOCALES = [
     nombre: "Big Papa",
     categoria: "Alitas y Papas",
     emoji: "🥔",
-    imagen: "logos/big-papa.png",
+    imagen: "big-papa.png",
     ubicacion: { lat: -2.2268229, lng: -80.856695 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.50 },
@@ -2897,7 +2897,7 @@ const LOCALES = [
     nombre: "Alitas Extremas",
     categoria: "Alitas y Papas",
     emoji: "🌶️",
-    imagen: "logos/alitas-extremas.png",
+    imagen: "alitas-extremas.png",
     ubicacion: { lat: -2.2209581, lng: -80.9109163 },
     tarifasEnvio: [
       { hastaKm: 1.31, precio: 2.25 },
