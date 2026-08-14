@@ -452,9 +452,9 @@ const LOCALES = [
       { hastaKm: 8.00, precio: 4.50 },
     ],
     menu: [
-      { id: "ea1", nombre: "Compra 1 pollo + Gratis 1 pollo", precio: 17.25, descripcion: "" },
-      { id: "ea2", nombre: "Compra 1/2 pollo + Gratis 1/2 pollo", precio: 9.25, descripcion: "" },
-      { id: "ea3", nombre: "Compra 1/4 pollo + Gratis 1/4 pollo", precio: 4.75, descripcion: "" },
+      { id: "ea1", nombre: "Compra 1 pollo + Gratis 1 pollo", precio: 17.00, descripcion: "" },
+      { id: "ea2", nombre: "Compra 1/2 pollo + Gratis 1/2 pollo", precio: 9.00, descripcion: "" },
+      { id: "ea3", nombre: "Compra 1/4 pollo + Gratis 1/4 pollo", precio: 4.50, descripcion: "" },
     ],
   },
 
