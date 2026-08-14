@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Delivery — Pide por WhatsApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-logo" src="logo.jpg" alt="Go Flash Delivery">
+      <h1 id="brandName">Tu Delivery</h1>
+    </div>
+    <div class="search">
+      <input type="text" id="buscador" placeholder="Buscar local o plato...">
+    </div>
+  </header>
+
+  <nav class="chips" id="chips"></nav>
+
+  <main class="catalogo" id="catalogo"></main>
+
+  <p class="empty-state" id="emptyState" hidden>
+    😕 No encontramos nada con eso. Prueba con otra búsqueda o categoría.
+  </p>
+
+  <!-- overlay con el menú de un local -->
+  <div class="overlay" id="overlayMenu" hidden>
+    <div class="overlay-panel">
+      <button class="cerrar" id="cerrarOverlay" aria-label="Cerrar">✕</button>
+      <div class="overlay-header" id="overlayHeader"></div>
+      <div class="overlay-items" id="overlayItems"></div>
+    </div>
+  </div>
+
+  <!-- pestaña flotante del carrito -->
+  <button class="ticket-tab" id="ticketTab" hidden>
+    <span class="ticket-icon">🧾</span>
+    <span id="ticketResumen">0 items · $0.00</span>
+  </button>
+
+  <!-- cajón del carrito -->
+  <div class="cart-scrim" id="cartScrim" hidden></div>
+  <div class="cart-drawer" id="cartDrawer" hidden>
+    <div class="perforado"></div>
+    <div class="cart-content">
+      <div class="cart-head">
+        <h2>Tu pedido</h2>
+        <button class="cerrar" id="cerrarCarrito" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="cart-lista" id="cartLista"></div>
+
+      <div class="ubicacion-box">
+        <button type="button" class="btn-ubicacion" id="btnUbicacion">📍 Usar mi ubicación para calcular el envío</button>
+        <p class="ubicacion-estado" id="ubicacionEstado"></p>
+      </div>
+
+      <div class="cart-totales" id="cartTotales"></div>
+
+      <form class="cart-datos" id="cartForm">
+        <label>Nombre
+          <input type="text" id="datoNombre" required placeholder="Tu nombre">
+        </label>
+        <label>Dirección de entrega
+          <input type="text" id="datoDireccion" required placeholder="Calle, referencia">
+        </label>
+        <label>Teléfono (opcional)
+          <input type="tel" id="datoTelefono" placeholder="09xxxxxxxx">
+        </label>
+        <button type="submit" class="btn-enviar">Enviar pedido por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

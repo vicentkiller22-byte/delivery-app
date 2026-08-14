@@ -1,0 +1,505 @@
+/* =====================================================================
+   Paleta extraída directamente del logo de Go Flash Delivery:
+   - Amarillo de fondo, vino oscuro del texto/ícono, dorado del rayo.
+   ===================================================================== */
+:root {
+  --amarillo: #F7FC00;        /* fondo de marca (igual al fondo del logo) */
+  --amarillo-suave: #FFF9CE;  /* variante clara, para íconos internos */
+  --vino: #63100F;            /* texto de marca / acciones de menú (del logo) */
+  --dorado: #F2A73A;          /* acento del rayo: usado para el CTA final */
+  --superficie: #FFFDF6;      /* fondo de tarjetas y menús, para que el texto resalte */
+  --tinta: #2A1712;           /* texto de cuerpo sobre superficie clara */
+  --linea: rgba(42, 23, 18, 0.16);
+  --sombra: 0 8px 24px rgba(42, 23, 18, 0.22);
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--amarillo);
+  color: var(--tinta);
+  font-family: "Work Sans", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+
+button { font-family: inherit; cursor: pointer; }
+input { font-family: inherit; }
+
+/* ---------- Header ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--amarillo);
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid rgba(99, 16, 15, 0.18);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.brand h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--vino);
+}
+
+.search input {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  background: var(--superficie);
+  font-size: 15px;
+  outline: none;
+  color: var(--tinta);
+}
+
+.search input:focus {
+  border-color: var(--vino);
+}
+
+/* ---------- Chips de categoría ---------- */
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 16px;
+  scrollbar-width: none;
+}
+.chips::-webkit-scrollbar { display: none; }
+
+.chip {
+  flex: none;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--linea);
+  background: var(--superficie);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tinta);
+  white-space: nowrap;
+}
+
+.chip.activo {
+  background: var(--vino);
+  border-color: var(--vino);
+  color: var(--amarillo);
+}
+
+/* ---------- Catálogo ---------- */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 4px 16px 100px;
+}
+
+@media (min-width: 640px) {
+  .catalogo { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 960px) {
+  .catalogo { grid-template-columns: repeat(4, 1fr); }
+}
+
+.local-card {
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-radius: 16px;
+  padding: 14px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.local-card .icono {
+  width: 100%;
+  aspect-ratio: 1.4;
+  border-radius: 12px;
+  background: var(--amarillo-suave);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  overflow: hidden;
+}
+
+.local-card .icono img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.local-card .nombre {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.25;
+  color: var(--tinta);
+}
+
+.local-card .categoria {
+  font-size: 12px;
+  color: var(--vino);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.empty-state {
+  text-align: center;
+  color: var(--tinta);
+  opacity: 0.75;
+  padding: 40px 20px;
+}
+
+/* ---------- Overlay de menú ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(42, 23, 18, 0.55);
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (min-width: 640px) {
+  .overlay { align-items: center; justify-content: center; }
+}
+
+.overlay-panel {
+  background: var(--superficie);
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 18px 24px;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .overlay-panel { max-width: 480px; border-radius: 20px; }
+}
+
+.cerrar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--amarillo-suave);
+  color: var(--vino);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.overlay-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-right: 40px;
+}
+
+.overlay-header .icono {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--amarillo-suave);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  overflow: hidden;
+  flex: none;
+}
+.overlay-header .icono img { width: 100%; height: 100%; object-fit: cover; }
+
+.overlay-header h2 { font-size: 20px; font-weight: 600; color: var(--tinta); }
+.overlay-header .categoria { font-size: 12px; color: var(--vino); font-weight: 700; text-transform: uppercase; }
+
+.item-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--linea);
+}
+
+.item-menu .foto-plato {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: none;
+  background: var(--amarillo-suave);
+}
+.item-menu .foto-plato img { width: 100%; height: 100%; object-fit: cover; }
+
+.item-menu .info { flex: 1; }
+.item-menu .nombre { font-weight: 600; font-size: 15px; color: var(--tinta); }
+.item-menu .descripcion { font-size: 13px; opacity: 0.7; margin-top: 2px; }
+.item-menu .precio { font-family: "IBM Plex Mono", monospace; font-size: 14px; margin-top: 4px; color: var(--vino); font-weight: 600; }
+
+.btn-agregar {
+  flex: none;
+  border: none;
+  background: var(--vino);
+  color: var(--amarillo);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--vino);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.stepper button {
+  border: none;
+  background: none;
+  color: var(--amarillo);
+  font-size: 16px;
+  font-weight: 700;
+  width: 20px;
+}
+.stepper span {
+  color: var(--amarillo);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  min-width: 14px;
+  text-align: center;
+}
+
+/* ---------- Pestaña flotante del carrito ---------- */
+.ticket-tab {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  background: var(--dorado);
+  color: var(--vino);
+  border: none;
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--sombra);
+}
+
+.ticket-icon { font-size: 18px; }
+
+/* ---------- Cajón del carrito (estilo comanda) ---------- */
+.cart-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(42, 23, 18, 0.55);
+}
+
+.cart-drawer {
+  position: fixed;
+  z-index: 31;
+  left: 0; right: 0; bottom: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--superficie);
+  border-radius: 18px 18px 0 0;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -8px 30px rgba(42, 23, 18, 0.3);
+}
+
+.perforado {
+  height: 14px;
+  background-image: radial-gradient(circle at 9px 0px, transparent 7px, var(--superficie) 7px);
+  background-size: 18px 14px;
+  background-repeat: repeat-x;
+  background-color: var(--vino);
+  border-radius: 18px 18px 0 0;
+}
+
+.cart-content {
+  padding: 16px 18px 20px;
+  overflow-y: auto;
+}
+
+.cart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.cart-head h2 { font-size: 19px; font-weight: 600; color: var(--tinta); }
+.cart-head .cerrar { position: static; }
+
+.cart-lista { margin: 10px 0; }
+
+.cart-grupo-local {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--vino);
+  letter-spacing: 0.03em;
+  margin: 14px 0 4px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13.5px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--linea);
+  color: var(--tinta);
+}
+
+.cart-item .cant { color: var(--vino); font-weight: 600; }
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 0;
+  border-top: 2px solid var(--vino);
+  margin-top: 6px;
+  color: var(--tinta);
+}
+
+.ubicacion-box {
+  margin: 8px 0 4px;
+}
+
+.btn-ubicacion {
+  width: 100%;
+  border: 1.5px dashed var(--vino);
+  background: var(--amarillo-suave);
+  color: var(--vino);
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ubicacion-estado {
+  font-size: 12.5px;
+  color: var(--tinta);
+  opacity: 0.75;
+  margin: 6px 0 0;
+  line-height: 1.4;
+}
+
+.cart-totales {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+
+.cart-totales .fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  color: var(--tinta);
+}
+
+.cart-totales .fila.envio-pendiente {
+  color: var(--vino);
+  opacity: 0.85;
+  font-style: italic;
+}
+
+.cart-totales .fila.total-final {
+  font-weight: 700;
+  font-size: 16px;
+  border-top: 2px solid var(--vino);
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+.cart-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.cart-datos label {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--tinta);
+}
+
+.cart-datos input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--linea);
+  font-size: 14px;
+  outline: none;
+  color: var(--tinta);
+}
+.cart-datos input:focus { border-color: var(--vino); }
+
+.btn-enviar {
+  margin-top: 8px;
+  border: none;
+  background: var(--dorado);
+  color: var(--vino);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.carrito-vacio {
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.7;
+  font-size: 14px;
+  color: var(--tinta);
+}
+
+:focus-visible {
+  outline: 2px solid var(--vino);
+  outline-offset: 2px;
+}
